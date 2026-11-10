@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="-22 -22 164 160" role="img">
+  <metadata>MIT License - Copyright (c) 2026 Mert Basar</metadata>
+  <title>Signal Radar Blobster</title>
+  <desc>A coral-orange Blobster wearing comms headphones and a dark indigo radar operator vest with a glowing signal scope, holding a compact radar dish.</desc>
+  <defs>
+    <clipPath id="blobster-body-clip">
+      <path d="M60 8 C32 8 16 32 16 52 C16 72 30 90 44 95 L44 104 L54 104 L54 96 C58 97.5 62 97.5 66 96 L66 104 L76 104 L76 95 C90 90 104 72 104 52 C104 32 88 8 60 8 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Radio wave arcs above antennae -->
+  <path d="M22 2 A14 14 0 0 1 34 -8" fill="none" stroke="#38BDF8" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M98 2 A14 14 0 0 0 86 -8" fill="none" stroke="#38BDF8" stroke-width="2.6" stroke-linecap="round"/>
+
+  <!-- Antennae -->
+  <g stroke="#F28A43" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M46 14 Q38 4 31 7"/>
+    <path d="M74 14 Q82 4 89 7"/>
+  </g>
+  <circle cx="30" cy="7" r="3.2" fill="#10B981" stroke="#0F172A" stroke-width="1.5"/>
+  <circle cx="90" cy="7" r="3.2" fill="#10B981" stroke="#0F172A" stroke-width="1.5"/>
+
+  <!-- Headphone headband arc behind/over top -->
+  <path d="M16 36 C16 6 104 6 104 36" fill="none" stroke="#1E293B" stroke-width="5" stroke-linecap="round"/>
+  <path d="M24 22 C36 9 84 9 96 22" fill="none" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Left claw -->
+  <path d="M20 42 C5 37 0 47 5 57 C10 67 20 62 25 52 C28 45 25 42 20 42 Z" fill="#CE632E"/>
+
+  <!-- Right claw holding Signal Radar Dish -->
+  <g transform="rotate(-18 114 44)">
+    <!-- Handle -->
+    <rect x="108" y="42" width="6" height="28" rx="3" fill="#334155" stroke="#0F172A" stroke-width="2.2"/>
+    <!-- Parabolic dish -->
+    <path d="M96 22 A20 20 0 0 0 126 42 L96 22 Z" fill="#E2E8F0" stroke="#1E293B" stroke-width="2.8" stroke-linejoin="round"/>
+    <!-- Feed horn & glowing ping -->
+    <line x1="111" y1="32" x2="120" y2="20" stroke="#1E293B" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="121" cy="19" r="4" fill="#10B981" stroke="#0F172A" stroke-width="1.8"/>
+    <path d="M126 11 A12 12 0 0 1 134 21" fill="none" stroke="#10B981" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+  <path d="M100 42 C115 37 120 47 115 57 C110 67 100 62 95 52 C92 45 95 42 100 42 Z" fill="#CE632E"/>
+
+  <!-- Canonical Blobster Body -->
+  <path d="M60 8 C32 8 16 32 16 52 C16 72 30 90 44 95 L44 104 L54 104 L54 96 C58 97.5 62 97.5 66 96 L66 104 L76 104 L76 95 C90 90 104 72 104 52 C104 32 88 8 60 8 Z" fill="#F28A43"/>
+
+  <!-- Comms Operator Vest & Signal Scope clipped to body -->
+  <g clip-path="url(#blobster-body-clip)">
+    <path d="M16 50 L42 46 L60 55 L78 46 L104 50 L104 106 L16 106 Z" fill="#1E293B"/>
+    <path d="M42 46 L60 55 L78 46" fill="none" stroke="#38BDF8" stroke-width="2.4" stroke-linejoin="round"/>
+    <!-- Radar/Waveform Screen on chest -->
+    <rect x="37" y="61" width="46" height="26" rx="5" fill="#0F172A" stroke="#334155" stroke-width="2.2"/>
+    <!-- Pulse waveform line -->
+    <polyline points="41,74 49,74 53,66 58,81 63,70 67,74 79,74" fill="none" stroke="#10B981" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Notification dot -->
+    <circle cx="77" cy="66" r="2.5" fill="#FBBF24"/>
+    <rect x="16" y="94" width="88" height="12" fill="#0F172A"/>
+  </g>
+
+  <!-- Headphone Earcups -->
+  <rect x="11" y="27" width="8" height="17" rx="4" fill="#1E293B" stroke="#38BDF8" stroke-width="1.8"/>
+  <rect x="101" y="27" width="8" height="17" rx="4" fill="#1E293B" stroke="#38BDF8" stroke-width="1.8"/>
+
+  <!-- Forehead shine & Eyes -->
+  <ellipse cx="48" cy="27" rx="19" ry="10" fill="#ffffff" opacity="0.12"/>
+  <g>
+    <circle cx="45" cy="33" r="5.6" fill="#0A1014"/>
+    <circle cx="75" cy="33" r="5.6" fill="#0A1014"/>
+    <circle cx="46.6" cy="31.4" r="2.2" fill="#FFEDD2"/>
+    <circle cx="76.6" cy="31.4" r="2.2" fill="#FFEDD2"/>
+  </g>
+</svg>

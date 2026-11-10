@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "routineId": "signal-radar",
+  "name": "Discord personal & high-priority signal radar",
+  "enabled": false,
+  "schedule": {
+    "kind": "cron",
+    "expr": "0 9-23/2 * * *",
+    "timezoneFrom": "state/config.json:timezone"
+  },
+  "sessionTarget": "isolated",
+  "payload": {
+    "kind": "agentTurn",
+    "message": "Run skills/discord-signal-brief/SKILL.md across state/config.json channels. If setup is incomplete or the browser/archive source is offline, do not advance cursors and return NO_REPLY unless an urgent setup error needs attention. If shouldNotify is false across all channels, commit noise-only cursors and return NO_REPLY. Otherwise write the report to reports/ and deliver a concise summary putting personal/project mentions first.",
+    "toolsAllow": ["read", "write", "edit", "browser", "exec", "session_status"],
+    "timeoutSeconds": 480
+  },
+  "delivery": { "mode": "none" }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@mertbasar0/discord-signal-radar",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "openclaw": {
+    "template": "CLAW.md"
+  }
+}

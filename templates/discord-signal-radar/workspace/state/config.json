@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "setup": {
+    "ready": false,
+    "completedAt": null
+  },
+  "language": "tr",
+  "timezone": null,
+  "sourceMode": "browser",
+  "browserProfile": "user",
+  "discrawlBrowserCachePath": null,
+  "channels": [],
+  "watchlist": {
+    "handles": [],
+    "projects": [],
+    "relatedTopics": []
+  },
+  "minDigestImportance": 4.0,
+  "automations": {
+    "signalRadarJobId": null,
+    "dailyBriefJobId": null
+  }
+}

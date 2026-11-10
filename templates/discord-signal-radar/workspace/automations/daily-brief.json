@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "routineId": "daily-brief",
+  "name": "Daily Discord channel evolution digest",
+  "enabled": false,
+  "schedule": {
+    "kind": "cron",
+    "expr": "30 9 * * *",
+    "timezoneFrom": "state/config.json:timezone"
+  },
+  "sessionTarget": "isolated",
+  "payload": {
+    "kind": "agentTurn",
+    "message": "Run skills/discord-signal-brief/SKILL.md for the daily briefing across state/config.json channels. Write the complete ranked digest to reports/ using templates/briefing.md, advance cursors only after verifying the written report, and return the concise briefing. Return NO_REPLY only when zero substantive discussions and zero personal signals occurred.",
+    "toolsAllow": ["read", "write", "edit", "browser", "exec", "session_status"],
+    "timeoutSeconds": 600
+  },
+  "delivery": { "mode": "none" }
+}

@@ -1,0 +1,14 @@
+schemaVersion: 1
+agent:
+  tools:
+    profile: full
+    allow:
+      - read
+      - write
+      - edit
+      - browser
+      - exec
+      - automations
+      - session_status
+    fs:
+      workspaceOnly: true

@@ -1,0 +1,66 @@
+{
+  "synthetic": true,
+  "watchlist": {
+    "handles": ["mertinGo", "MertBasar0"],
+    "projects": ["clawhandoff", "handoff-coordinator"],
+    "relatedTopics": ["a2a", "acp", "agent templates"]
+  },
+  "messages": [
+    {
+      "id": "1001",
+      "channel": "clawtributors",
+      "author": "Patrick",
+      "timestamp": "01:00",
+      "content": "Wondering how folks feel about ripping out the multi-harness profile split so we don't require a separate profiles/openclaw.yml file."
+    },
+    {
+      "id": "1002",
+      "channel": "clawtributors",
+      "author": "Mitchell",
+      "timestamp": "01:01",
+      "content": "Makes sense for now — ship native first, cross-compatibility later."
+    },
+    {
+      "id": "1003",
+      "channel": "clawtributors",
+      "author": "Json",
+      "timestamp": "01:02",
+      "content": "lol"
+    },
+    {
+      "id": "1004",
+      "channel": "clawtributors",
+      "author": "Ritz",
+      "timestamp": "01:03",
+      "content": "second"
+    },
+    {
+      "id": "1005",
+      "channel": "clawtributors",
+      "author": "Patrick",
+      "timestamp": "01:10",
+      "content": "Okay I did forget that part of the intention behind profiles/openclaw.yml was keeping ugly tool/sandbox YAML out of CLAW.md so CLAW.md stays human-readable."
+    },
+    {
+      "id": "1006",
+      "channel": "clawtributors",
+      "author": "Holger",
+      "timestamp": "02:15",
+      "content": "Heads-up in case it saves someone time: ClawHub CLI 0.25.1 rejects an empty automations: [] key in CLAW.md, so omit the key when you have no schedules."
+    },
+    {
+      "id": "1007",
+      "channel": "clawtributors",
+      "author": "Alex",
+      "timestamp": "02:42",
+      "content": "Has anyone tried the new handoff-coordinator template with clawhandoff for two-stage PR gating yet?"
+    },
+    {
+      "id": "1008",
+      "channel": "clawtributors",
+      "author": "Sam",
+      "timestamp": "02:50",
+      "content": "@mertinGo curious how your bridge handles reconnects when a browser tab reloads mid-turn!"
+    }
+  ]
+}
