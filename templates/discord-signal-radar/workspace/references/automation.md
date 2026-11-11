@@ -1,6 +1,6 @@
 # Scheduled Radar & Daily Brief Automations
 
-Native OpenClaw automations are the sole scheduler. The public Template omits manifest `cronJobs` so no unconfigured job fires before onboarding completes.
+Native OpenClaw automations are the sole scheduler. The Template manifest declares both `automations` entries paused by default (`enabled: false`) so no unconfigured job fires before onboarding completes.
 
 Instantiate both recipes **disabled** (`enabled: false`) during first-run setup once the user confirms their IANA timezone:
 

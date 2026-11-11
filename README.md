@@ -32,14 +32,14 @@ An OpenClaw **Agent Template** that spares you from endless Discord scrolling. A
 Requires OpenClaw `2026.11.5-beta.1` (or `main`) with **Templates** enabled in **Settings -> Labs** (`gateway.controlUi.experimental.templates: true`):
 
 ```sh
-openclaw templates add @mertbasar0/discord-signal-radar
+openclaw agents add --template @mertbasar0/discord-signal-radar
 ```
 
 Or add directly from a local clone:
 
 ```sh
 git clone https://github.com/MertBasar0/discord-signal-radar.git
-openclaw templates add ./discord-signal-radar/templates/discord-signal-radar
+openclaw agents add --template ./discord-signal-radar/templates/discord-signal-radar
 ```
 
 ## Zero-Setup Fixture Preview

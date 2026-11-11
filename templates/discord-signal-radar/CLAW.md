@@ -16,11 +16,11 @@ workspace:
   bootstrapFiles:
     AGENTS.md:
       source: workspace/AGENTS.md
+    IDENTITY.md:
+      source: workspace/IDENTITY.md
+    TOOLS.md:
+      source: workspace/TOOLS.md
   files:
-    - source: workspace/IDENTITY.md
-      path: IDENTITY.md
-    - source: workspace/TOOLS.md
-      path: TOOLS.md
     - source: workspace/USER.md
       path: USER.md
     - source: workspace/MEMORY.md
@@ -31,8 +31,6 @@ workspace:
       path: state/cursors.json
     - source: workspace/scripts/signal-engine.mjs
       path: scripts/signal-engine.mjs
-    - source: workspace/skills/discord-signal-brief/SKILL.md
-      path: skills/discord-signal-brief/SKILL.md
     - source: workspace/references/browser-and-discrawl.md
       path: references/browser-and-discrawl.md
     - source: workspace/references/automation.md
@@ -49,6 +47,29 @@ workspace:
       path: assets/avatar.png
     - source: workspace/avatars/blobster.svg
       path: avatars/blobster.svg
+skills:
+  - path: workspace/skills/discord-signal-brief
+automations:
+  - id: signal-radar
+    name: Discord personal & high-priority signal radar
+    enabled: false
+    schedule:
+      cron: "0 9-23/2 * * *"
+      timezone: UTC
+    session: isolated
+    message: "Run skills/discord-signal-brief/SKILL.md across state/config.json channels. If setup is incomplete or the browser/archive source is offline, do not advance cursors and return NO_REPLY unless an urgent setup error needs attention. If shouldNotify is false across all channels, commit noise-only cursors and return NO_REPLY. Otherwise write the report to reports/ and deliver a concise summary putting personal/project mentions first."
+    delivery:
+      mode: none
+  - id: daily-brief
+    name: Daily Discord channel evolution digest
+    enabled: false
+    schedule:
+      cron: "30 9 * * *"
+      timezone: UTC
+    session: isolated
+    message: "Run skills/discord-signal-brief/SKILL.md for the daily briefing across state/config.json channels. Write the complete ranked digest to reports/ using templates/briefing.md, advance cursors only after verifying the written report, and return the concise briefing. Return NO_REPLY only when zero substantive discussions and zero personal signals occurred."
+    delivery:
+      mode: none
 ---
 
 # Discord Signal Radar
